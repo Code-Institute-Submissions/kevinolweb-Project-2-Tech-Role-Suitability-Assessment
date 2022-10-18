@@ -1,10 +1,12 @@
 const quizData = [
     {
         question:"Which of the below represents how you like to work?",
-        answer_a:"I like to work by myself",
-        answer_b:"I like to work by myself while also collaborating with others",
-        answer_c:"I mostly prefer to work with other people every day",
-        answer_d:"I don’t like working on my own ",
+        answers:{
+            answer_a:"I like to work by myself",
+            answer_b:"I like to work by myself while also collaborating with others",
+            answer_c:"I mostly prefer to work with other people every day",
+            answer_d:"I don’t like working on my own ",
+        },
         highest_score:"b",
         second_highest_score:"a",
         third_highest_score:"c",
@@ -12,14 +14,29 @@ const quizData = [
     },
     {
         question:"Are you good at Maths and numerics/statistics?",
-        answer_a:"I hate Maths and statistics ",
-        answer_b:"I am relatively good at Maths but enjoy more creative pursuits",
-        answer_c:"I enjoy Maths and never forget a date ",
-        answer_d:"Maths and statistics come easy to me and I love to open up an excel sheet",
+        answers:{
+            answer_a:"I hate Maths and statistics ",
+            answer_b:"I am relatively good at Maths but enjoy more creative pursuits",
+            answer_c:"I enjoy Maths and never forget a date ",
+            answer_d:"Maths and statistics come easy to me and I love to open up an excel sheet",
+        },
         highest_score:"d",
         second_highest_score:"c",
         third_highest_score:"b",
         fourth_highest_score:"a"
+    },
+    {
+        question:"Which of the following best describes your attitude to work?",
+        answers:{
+            answer_a:"I love structured and detailed work which is goal oriented",
+            answer_b:"I prefer variety at work and like to do different things",
+            answer_c:"I get bored easily and like to know what is expected of me",
+            answer_d:"I like to schedule my day so I can stay on task which also allow for pivots",
+        },
+        highest_score:"a",
+        second_highest_score:"d",
+        third_highest_score:"b",
+        fourth_highest_score:"c"
     },
 ]
 
@@ -46,13 +63,14 @@ function runGame(){
 function displayQuestion(){
     deSelectAnswer()
     question_text.innerText = quizData[currentQuestion].question
-    a_text.innerText = quizData[currentQuestion].answer_a
-    b_text.innerText = quizData[currentQuestion].answer_b
-    c_text.innerText = quizData[currentQuestion].answer_c
-    d_text.innerText = quizData[currentQuestion].answer_d
-    
+    a_text.innerText = quizData[currentQuestion].answers.answer_a
+    b_text.innerText = quizData[currentQuestion].answers.answer_b
+    c_text.innerText = quizData[currentQuestion].answers.answer_c
+    d_text.innerText = quizData[currentQuestion].answers.answer_d
+
     if (currentQuestion===quizData.length-1){
         nextbtn.innerText="Finish";
+        nextbtn.style.backgroundColor="red";
     }
     
 }
@@ -64,9 +82,9 @@ function deSelectAnswer(){
 function selectAnswer(){
     let userAnswer
     answers.forEach(selAns=>{
-        if(selAns.checked){
-            userAnswer = selAns.id;
-        }
+    if(selAns.checked){
+        userAnswer = selAns.id;
+    }
     })
     return userAnswer
 }
@@ -78,15 +96,46 @@ nextbtn.addEventListener("click", function(){
         alert("Answer it!!")
     }
     else{
+        calculateScore(userAnswer);
         currentQuestion++
         if (currentQuestion<quizData.length){
             runGame()
         }
         
         else{
-            quizContainer.classList.add("hide")
-            resultsArea.innerText="Game Over";
+            showResult()
         }
     }
 })
 
+function calculateScore(theAnswer){
+    if (theAnswer===quizData[currentQuestion].highest_score){
+        score +=10;
+    }
+    else if(theAnswer===quizData[currentQuestion].second_highest_score){
+        score +=7;
+    }
+    else if(theAnswer===quizData[currentQuestion].third_highest_score){
+        score +=4;
+    }
+    else if(theAnswer===quizData[currentQuestion].fourth_highest_score){
+        score +=1;
+    }
+
+}
+
+function showResult(){
+    let resultText
+    if (score>15){
+        resultText = "You can be a great developer"
+    }
+    else if(score<15){
+        resultText = "You can be a great  just not a dev!"
+    }
+    else{
+        resultText = "Error compiling results"
+    }
+    quizContainer.classList.add("hide")
+    resultsArea.innerHTML=`<p>Game Over</p><br/><p>You scored ${score}.</p><p>${resultText}`;
+    console.log(score)
+}
