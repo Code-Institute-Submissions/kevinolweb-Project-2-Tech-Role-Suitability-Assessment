@@ -29,6 +29,7 @@ let b_text = document.getElementById("b-label")
 let c_text = document.getElementById("c-label")
 let d_text = document.getElementById("d-label")
 let nextbtn = document.getElementById("next-btn")
+let answers = document.querySelectorAll(".answer")
 
 let currentQuestion = 0;
 let score = 0;
@@ -41,6 +42,7 @@ function runGame(){
 }
 
 function displayQuestion(){
+    deSelectAnswer()
     question_text.innerText = quizData[currentQuestion].question
     a_text.innerText = quizData[currentQuestion].answer_a
     b_text.innerText = quizData[currentQuestion].answer_b
@@ -49,10 +51,30 @@ function displayQuestion(){
     
 }
 
+function deSelectAnswer(){
+    answers.forEach(ans=>ans.checked=false)
+}
+
+function selectAnswer(){
+    answers.forEach(ans=>{
+        if(ans.checked){
+            userAnswer =ans.id
+        }
+    })
+    return userAnswer
+}
+
 nextbtn.addEventListener("click", function(){
-    currentQuestion++
-    if (currentQuestion<quizData.length){
-        runGame()
+    let userAnswer = selectAnswer()
+    console.log(userAnswer)
+    if (userAnswer===undefined || userAnswer===null){
+        alert("Answer it!!")
+    }
+    else{
+        currentQuestion++
+            if (currentQuestion<quizData.length){
+            runGame()
+            }
     }
 })
-    
+
