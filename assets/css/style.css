@@ -11,3 +11,7 @@ hr{
 .container{
     width:80%;
 }
+
+.hide {
+    display:none;
+}

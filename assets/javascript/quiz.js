@@ -23,6 +23,7 @@ const quizData = [
     },
 ]
 
+let quizContainer = document.getElementById("quiz")
 let question_text = document.getElementById("quiz-question")
 let a_text = document.getElementById("a-label")
 let b_text = document.getElementById("b-label")
@@ -30,6 +31,7 @@ let c_text = document.getElementById("c-label")
 let d_text = document.getElementById("d-label")
 let nextbtn = document.getElementById("next-btn")
 let answers = document.querySelectorAll(".answer")
+let resultsArea = document.getElementById("results-area")
 
 let currentQuestion = 0;
 let score = 0;
@@ -49,6 +51,10 @@ function displayQuestion(){
     c_text.innerText = quizData[currentQuestion].answer_c
     d_text.innerText = quizData[currentQuestion].answer_d
     
+    if (currentQuestion===quizData.length-1){
+        nextbtn.innerText="Finish";
+    }
+    
 }
 
 function deSelectAnswer(){
@@ -56,9 +62,10 @@ function deSelectAnswer(){
 }
 
 function selectAnswer(){
-    answers.forEach(ans=>{
-        if(ans.checked){
-            userAnswer =ans.id
+    let userAnswer
+    answers.forEach(selAns=>{
+        if(selAns.checked){
+            userAnswer = selAns.id;
         }
     })
     return userAnswer
@@ -72,9 +79,14 @@ nextbtn.addEventListener("click", function(){
     }
     else{
         currentQuestion++
-            if (currentQuestion<quizData.length){
+        if (currentQuestion<quizData.length){
             runGame()
-            }
+        }
+        
+        else{
+            quizContainer.classList.add("hide")
+            resultsArea.innerText="Game Over";
+        }
     }
 })
 
