@@ -1,0 +1,13 @@
+*{
+    margin:10px;
+}
+
+hr{
+    border:0px;
+    border-bottom: 3px solid #eee;
+    width:70%;
+}
+
+.container{
+    width:80%;
+}
