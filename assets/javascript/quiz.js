@@ -38,6 +38,32 @@ const quizData = [
         third_highest_score:"b",
         fourth_highest_score:"c"
     },
+    {
+        question:"What kind of job best suits you?",
+        answers:{
+            answer_a:"I prefer a job where I can learn what to do and does not require further study",
+            answer_b:"I love a job where I do have all the answers and have to learn new skills every day at work or after work",
+            answer_c:"I like to learn but think I should be paid by my employer to upskill in which case I would be happy to further study",
+            answer_d:"I want a job which is challenging and sometimes requires me to improve my skillset through outside learning ",
+        },
+        highest_score:"b",
+        second_highest_score:"d",
+        third_highest_score:"c",
+        fourth_highest_score:"a"
+    },
+    {
+        question:"Which 3 words would people use to describe you?",
+        answers:{
+            answer_a:"Hardworking, detail oriented & a problem solver",
+            answer_b:"Good communicator, great delegator & a creative thinker ",
+            answer_c:"Passionate, patient and a continual learner",
+            answer_d:"Results oriented, driven & likes to work on your own",
+        },
+        highest_score:"a",
+        second_highest_score:"d",
+        third_highest_score:"b",
+        fourth_highest_score:"c"
+    },
 ]
 
 let quizContainer = document.getElementById("quiz")
@@ -87,7 +113,7 @@ function displayQuestion(){
 
     if (currentQuestion===quizData.length-1){
         nextbtn.innerText="Finish";
-        nextbtn.style.backgroundColor="red";
+        nextbtn.style.backgroundColor="#ED4558";
     }
     
 }
