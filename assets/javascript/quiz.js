@@ -53,7 +53,7 @@ let errorText = document.getElementById("error-text")
 let startButton =document.getElementById("start-btn")
 let entryScreen =document.getElementById("entry-screen")
 let nameBlankError = document.getElementById("error-nametext")
-
+let questionNumber = document.getElementById("quiz-question-number")
 
 let currentQuestion = 0;
 let score = 0;
@@ -78,6 +78,7 @@ function runGame(){
 
 function displayQuestion(){
     deSelectAnswer()
+    questionNumber.innerText = "Question " + (currentQuestion+1) + " of " + quizData.length + " Questions"
     question_text.innerText = quizData[currentQuestion].question
     a_text.innerText = quizData[currentQuestion].answers.answer_a
     b_text.innerText = quizData[currentQuestion].answers.answer_b
