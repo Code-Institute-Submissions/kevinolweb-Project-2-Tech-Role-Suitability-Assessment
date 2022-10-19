@@ -12,10 +12,20 @@ hr{
     width:80%;
 }
 
+.quiz-container{
+    display:none;
+}
+
 .hide {
     display:none;
 }
 
 .red{
     background-color: red;
+}
+
+#error-text{
+    color:red;
+    font-style: italic;
+    display:none;
 }

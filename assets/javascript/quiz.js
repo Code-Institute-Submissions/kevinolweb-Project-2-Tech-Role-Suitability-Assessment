@@ -49,15 +49,22 @@ let d_text = document.getElementById("d-label")
 let nextbtn = document.getElementById("next-btn")
 let answers = document.querySelectorAll(".answer")
 let resultsArea = document.getElementById("results-area")
+let errorText = document.getElementById("error-text")
+let startButton =document.getElementById("start-btn")
+let entryScreen =document.getElementById("entry-screen")
+let firstName = document.getElementById("fname")
+
 
 let currentQuestion = 0;
 let score = 0;
+let quizName="";
 
-document.addEventListener("DOMContentLoaded",runGame)
+startButton.addEventListener("click",runGame)
 
 function runGame(){
     displayQuestion()
-    
+    entryScreen.style.display="none"
+    quizContainer.style.display="block"
 }
 
 function displayQuestion(){
@@ -93,16 +100,18 @@ nextbtn.addEventListener("click", function(){
     let userAnswer = selectAnswer()
     console.log(userAnswer)
     if (userAnswer===undefined || userAnswer===null){
-        alert("Answer it!!")
+        errorText.style.display="block";
     }
     else{
         calculateScore(userAnswer);
+        errorText.style.display="none";
         currentQuestion++
         if (currentQuestion<quizData.length){
             runGame()
         }
         
         else{
+            quizContainer.style.display="none"
             showResult()
         }
     }
@@ -126,6 +135,7 @@ function calculateScore(theAnswer){
 
 function showResult(){
     let resultText
+    let quizName = firstName.value
     if (score>15){
         resultText = "You can be a great developer"
     }
@@ -136,6 +146,6 @@ function showResult(){
         resultText = "Error compiling results"
     }
     quizContainer.classList.add("hide")
-    resultsArea.innerHTML=`<p>Game Over</p><br/><p>You scored ${score}.</p><p>${resultText}`;
+    resultsArea.innerHTML=`<p>Quiz Over</p><br/><p>Thank you for participating ${quizName}. You scored ${score}.</p><p>${resultText}`;
     console.log(score)
 }
