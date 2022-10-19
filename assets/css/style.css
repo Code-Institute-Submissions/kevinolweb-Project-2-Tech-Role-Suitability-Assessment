@@ -29,3 +29,8 @@ hr{
     font-style: italic;
     display:none;
 }
+#error-nametext{
+    color:red;
+    font-style: italic;
+    display:none;
+}

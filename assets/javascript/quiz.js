@@ -52,14 +52,23 @@ let resultsArea = document.getElementById("results-area")
 let errorText = document.getElementById("error-text")
 let startButton =document.getElementById("start-btn")
 let entryScreen =document.getElementById("entry-screen")
-let firstName = document.getElementById("fname")
+let nameBlankError = document.getElementById("error-nametext")
 
 
 let currentQuestion = 0;
 let score = 0;
 let quizName="";
 
-startButton.addEventListener("click",runGame)
+startButton.addEventListener("click",function(){
+    let firstName = document.getElementById("fname")
+    quizName += firstName.value
+    if (quizName.length!=0){
+        runGame()
+    }
+    else{
+        nameBlankError.style.display="block";
+    }
+})
 
 function runGame(){
     displayQuestion()
@@ -135,7 +144,6 @@ function calculateScore(theAnswer){
 
 function showResult(){
     let resultText
-    let quizName = firstName.value
     if (score>15){
         resultText = "You can be a great developer"
     }
