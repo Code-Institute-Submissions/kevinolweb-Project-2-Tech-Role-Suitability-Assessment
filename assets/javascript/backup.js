@@ -236,13 +236,8 @@ function calculateScore(theAnswer){
 
 function showResult(){
     let resultText;
-    let resultImage;
-    let careerlabel;
     if (score>=80){
-        resultText = "are highly technical with a flair for finding and implementing solutions for everyday problems. It is very likely that a highly technical role within an organisation would suit your aptitudes. Possible career opportunities for you in Tech could include:</p>";
-        careerlabel = "Problem Solver";
-        resultImage ="../assets/images/high-tech-role.jpg";
-        careers = ["Software Developer","Data Scientist","Full Stack engineer","Mobile & App developer","Cloud Engineer"]
+        resultText = "You are stronly suited to a technical role based on your answers. Careers like a software developer, Data Scientist, stack engineer, App developer etc. could await you. Get started on the coding journey today!";
     }
     else if(score>=60 && score<80){
         resultText = "Your answers indicate that you could be well suited to a technical role which also allows for creativity and a lot of collaboration. Careers like a Web Designer, Front end developer, systems architect, IT administrator etc. could await you. Get started on the coding journey today!";
@@ -257,13 +252,6 @@ function showResult(){
         resultText = "Error compiling results";
     }
     quizContainer.classList.add("hide");
+    resultsArea.innerHTML=`<p>Assess Over</p><br/><p>Thank you for participating ${quizName}. You scored ${score}.</p><p>${resultText}`;
     console.log(score);
-    resultsArea.innerHTML=`<h2>Assessment Completed!</h2><p>Thank you for participating ${quizName}.</p>
-    <h3>Based on the responses to the assessment, you are a <span style="color:#9433D6;">${careerlabel}</span>.</h3> 
-    <img src="${resultImage}"/>
-    <p>${careerlabel}'s ${resultText}</p>
-    <ul><li>${careers[0]}</li><li>${careers[1]}</li><li>${careers[2]}</li><li>${careers[3]}</li><li>${careers[4]}</li></ul>
-    <p>Explore these careers and more on the Grad Ireland <a target="_blank" href="https://gradireland.com/careers-advice/job-descriptions">website. </a>Get started on your journey to a career in Tech today!</p>
-    `;
-    
 }
