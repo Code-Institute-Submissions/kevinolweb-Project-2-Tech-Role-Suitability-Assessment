@@ -242,16 +242,25 @@ function showResult(){
         resultText = "are highly technical with a flair for finding and implementing solutions for everyday problems. It is very likely that a highly technical role within an organisation would suit your aptitudes. Possible career opportunities for you in Tech could include:</p>";
         careerlabel = "Problem Solver";
         resultImage ="../assets/images/high-tech-role.jpg";
-        careers = ["Software Developer","Data Scientist","Full Stack engineer","Mobile & App developer","Cloud Engineer"]
+        careers = ["Software Developer","Data Scientist","Full Stack engineer","Mobile & App developer","Cloud Engineer"];
     }
     else if(score>=60 && score<80){
-        resultText = "Your answers indicate that you could be well suited to a technical role which also allows for creativity and a lot of collaboration. Careers like a Web Designer, Front end developer, systems architect, IT administrator etc. could await you. Get started on the coding journey today!";
+        resultText = "are quiet technical with high degree of creativity who collaborate with multiple different stakeholders. It is highly likely that roles with this focus within an organisation would suit your aptitudes. Possible career opportunities for you in Tech could include:";
+        careerlabel = "Solution Developer";
+        resultImage ="../assets/images/solution-developer.jpg";
+        careers = ["Web Designer","Front End Developer","Cybersecurity Specialist","Systems/Cloud architect","IT administrator"];
     }
     else if(score>=40 && score<60){
-        resultText = "Your answers indicate that you could be well suited to a role which is a little technical but mostly allows you to demonstrate a lot of creativity and collaborate with others. Careers like Graphic Design, Technical Support, IT Analyst, QA, Account Manager etc. could await you. Get started on your Tech journey today!";
+        resultText = "have technical skills but their day to day tasks involve a lot of analysis and collaboration with others. It is highly likely that roles with this focus within an organisation would suit your aptitudes. Possible career opportunities for you in Tech could include:";
+        careerlabel = "Enthusiastic Collaborator";
+        resultImage ="../assets/images/collaborator.jpg";
+        careers = ["Technical Support", "IT Analyst", "Software Tester(QA)", "Account Manager", "Conversion Rate Optimiser(CRO)"];
     }
     else if(score>0 && score<40){
-        resultText = "Your answers indicate that you could be well suited to a role which is involves interaction with a lot of different stakholders and also allows for creativity and doesn't require too much technical knowledge. Careers like Project Management, Software sales, customer support, content writing etc could await you. Get started on your Tech journey today!";
+        resultText = "do not require much technical skills as their day to day tasks take a more strategic focus and may involve a lot of interaction & colloaboration with clients, customers and other stakeholders. It is highly likely that roles with this focus within an organisation would suit your aptitudes. Possible career opportunities for you in Tech could include:";
+        careerlabel = "Strategic Supporter";
+        resultImage ="../assets/images/heros.jpg";
+        careers = ["Project Management", "Software Sales", "Customer Support", "Content Writer", "Digital Manager"];
     }
     else{
         resultText = "Error compiling results";
@@ -259,8 +268,8 @@ function showResult(){
     quizContainer.classList.add("hide");
     console.log(score);
     resultsArea.innerHTML=`<h2>Assessment Completed!</h2><p>Thank you for participating ${quizName}.</p>
-    <h3>Based on the responses to the assessment, you are a <span style="color:#9433D6;">${careerlabel}</span>.</h3> 
-    <img src="${resultImage}"/>
+    <h3>Based on the responses to the assessment, you are a <span style="color:#9433D6;"><u>${careerlabel}</u></span>.</h3> 
+    <img class="resultImg" alt="Tech Careers" width=100% src="${resultImage}"/>
     <p>${careerlabel}'s ${resultText}</p>
     <ul><li>${careers[0]}</li><li>${careers[1]}</li><li>${careers[2]}</li><li>${careers[3]}</li><li>${careers[4]}</li></ul>
     <p>Explore these careers and more on the Grad Ireland <a target="_blank" href="https://gradireland.com/careers-advice/job-descriptions">website. </a>Get started on your journey to a career in Tech today!</p>
