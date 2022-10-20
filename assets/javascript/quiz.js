@@ -269,7 +269,7 @@ function showResult(){
     console.log(score);
     resultsArea.innerHTML=`<h2>Assessment Completed!</h2><p>Thank you for participating ${quizName}.</p>
     <h3>Based on the responses to the assessment, you are a <span style="color:#9433D6;"><u>${careerlabel}</u></span>.</h3> 
-    <img class="resultImg" alt="Tech Careers" width=100% src="${resultImage}"/>
+    <img class="resultImg" alt="Tech Person at Work" width=100% src="${resultImage}"/>
     <p>${careerlabel}'s ${resultText}</p>
     <ul><li>${careers[0]}</li><li>${careers[1]}</li><li>${careers[2]}</li><li>${careers[3]}</li><li>${careers[4]}</li></ul>
     <p>Explore these careers and more on the Grad Ireland <a target="_blank" href="https://gradireland.com/careers-advice/job-descriptions">website. </a>Get started on your journey to a career in Tech today!</p>
