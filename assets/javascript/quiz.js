@@ -105,7 +105,7 @@ function runGame(){
 
 function displayQuestion(){
     deSelectAnswer();
-    questionNumber.innerText = "Question " + (currentQuestion+1) + " of " + quizData.length + " Questions";
+    questionNumber.innerText = "Question " + (currentQuestion+1) + " of " + quizData.length;
     question_text.innerText = quizData[currentQuestion].question;
     a_text.innerText = quizData[currentQuestion].answers.answer_a;
     b_text.innerText = quizData[currentQuestion].answers.answer_b;
