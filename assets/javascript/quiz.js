@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const quizData = [
     {
         question:"Which of the below represents how you like to work?",
@@ -64,52 +65,52 @@ const quizData = [
         third_highest_score:"b",
         fourth_highest_score:"c"
     },
-]
+];
 
-let quizContainer = document.getElementById("quiz")
-let question_text = document.getElementById("quiz-question")
-let a_text = document.getElementById("a-label")
-let b_text = document.getElementById("b-label")
-let c_text = document.getElementById("c-label")
-let d_text = document.getElementById("d-label")
-let nextbtn = document.getElementById("next-btn")
-let answers = document.querySelectorAll(".answer")
-let resultsArea = document.getElementById("results-area")
-let errorText = document.getElementById("error-text")
-let startButton =document.getElementById("start-btn")
-let entryScreen =document.getElementById("entry-screen")
-let nameBlankError = document.getElementById("error-nametext")
-let questionNumber = document.getElementById("quiz-question-number")
+let quizContainer = document.getElementById("quiz");
+let question_text = document.getElementById("quiz-question");
+let a_text = document.getElementById("a-label");
+let b_text = document.getElementById("b-label");
+let c_text = document.getElementById("c-label");
+let d_text = document.getElementById("d-label");
+let nextbtn = document.getElementById("next-btn");
+let answers = document.querySelectorAll(".answer");
+let resultsArea = document.getElementById("results-area");
+let errorText = document.getElementById("error-text");
+let startButton =document.getElementById("start-btn");
+let entryScreen =document.getElementById("entry-screen");
+let nameBlankError = document.getElementById("error-nametext");
+let questionNumber = document.getElementById("quiz-question-number");
 
 let currentQuestion = 0;
 let score = 0;
 let quizName="";
 
 startButton.addEventListener("click",function(){
-    let firstName = document.getElementById("fname")
-    quizName += firstName.value
+    let firstName = document.getElementById("fname");
+    quizName += firstName.value;
     if (quizName.length!=0){
-        runGame()
+        runGame();
     }
     else{
         nameBlankError.style.display="block";
     }
-})
+});
 
 function runGame(){
-    displayQuestion()
-    entryScreen.style.display="none"
-    quizContainer.style.display="block"
+    displayQuestion();
+    entryScreen.style.display="none";
+    quizContainer.style.display="block";
 }
 
 function displayQuestion(){
-    deSelectAnswer()
-    questionNumber.innerText = "Question " + (currentQuestion+1) + " of " + quizData.length + " Questions"
-    question_text.innerText = quizData[currentQuestion].question
-    a_text.innerText = quizData[currentQuestion].answers.answer_a
-    b_text.innerText = quizData[currentQuestion].answers.answer_b
-    c_text.innerText = quizData[currentQuestion].answers.answer_c
-    d_text.innerText = quizData[currentQuestion].answers.answer_d
+    deSelectAnswer();
+    questionNumber.innerText = "Question " + (currentQuestion+1) + " of " + quizData.length + " Questions";
+    question_text.innerText = quizData[currentQuestion].question;
+    a_text.innerText = quizData[currentQuestion].answers.answer_a;
+    b_text.innerText = quizData[currentQuestion].answers.answer_b;
+    c_text.innerText = quizData[currentQuestion].answers.answer_c;
+    d_text.innerText = quizData[currentQuestion].answers.answer_d;
 
     if (currentQuestion===quizData.length-1){
         nextbtn.innerText="Finish";
@@ -119,39 +120,38 @@ function displayQuestion(){
 }
 
 function deSelectAnswer(){
-    answers.forEach(ans=>ans.checked=false)
+    answers.forEach(ans=>ans.checked=false);
 }
 
 function selectAnswer(){
-    let userAnswer
+    let userAnswer;
     answers.forEach(selAns=>{
     if(selAns.checked){
         userAnswer = selAns.id;
     }
-    })
-    return userAnswer
+    });
+    return userAnswer;
 }
 
 nextbtn.addEventListener("click", function(){
-    let userAnswer = selectAnswer()
-    console.log(userAnswer)
+    let userAnswer = selectAnswer();
     if (userAnswer===undefined || userAnswer===null){
         errorText.style.display="block";
     }
     else{
         calculateScore(userAnswer);
         errorText.style.display="none";
-        currentQuestion++
+        currentQuestion++;
         if (currentQuestion<quizData.length){
-            runGame()
+            runGame();
         }
         
         else{
-            quizContainer.style.display="none"
-            showResult()
+            quizContainer.style.display="none";
+            showResult();
         }
     }
-})
+});
 
 function calculateScore(theAnswer){
     if (theAnswer===quizData[currentQuestion].highest_score){
@@ -170,17 +170,17 @@ function calculateScore(theAnswer){
 }
 
 function showResult(){
-    let resultText
+    let resultText;
     if (score>15){
-        resultText = "You can be a great developer"
+        resultText = "You can be a great developer";
     }
     else if(score<15){
-        resultText = "You can be a great  just not a dev!"
+        resultText = "You can be a great  just not a dev!";
     }
     else{
-        resultText = "Error compiling results"
+        resultText = "Error compiling results";
     }
-    quizContainer.classList.add("hide")
+    quizContainer.classList.add("hide");
     resultsArea.innerHTML=`<p>Quiz Over</p><br/><p>Thank you for participating ${quizName}. You scored ${score}.</p><p>${resultText}`;
-    console.log(score)
+    console.log(score);
 }
