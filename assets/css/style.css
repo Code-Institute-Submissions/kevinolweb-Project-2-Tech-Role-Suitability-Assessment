@@ -104,7 +104,7 @@ hr{
     font-weight:800;
     margin-bottom:30px;
 }
-
+/* Start Screen Styles */
 #entry-screen{
     margin:0 auto;
     text-align: center;
@@ -152,7 +152,7 @@ label {
     font-size: 1em;
     margin-right:15px
   }
-/* Answer Area */
+/* Answers Area */
 .answers{
     margin:20px 10px 40px 10px;
 }
@@ -160,7 +160,7 @@ input[type="radio"] {
     height: 1.2em;
     width: 1.2em;
 }
-
+/* Desktop screen queries */
 @media screen and (min-width:901px){
     .container{
         max-width:800px;

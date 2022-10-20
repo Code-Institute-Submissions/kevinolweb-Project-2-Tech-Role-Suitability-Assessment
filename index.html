@@ -17,17 +17,19 @@
             <h1 class="quiz-heading">Tech Role Suitability Assessment</h1>
             <hr>
         </header>
-            <section id="entry-screen">
-                <h3 class="guidelines">How it works</h3>
-                <p class="guidelinesp">The following quiz is intended to figure out your interests and aptitudes to best direct the kind of career in tech which may suit you the best. You will be presented with a series of 10 questions, please answer each truthfully in order to achieve the most reliable results.</p>
-                <div id="namefields">
-                <label for="fname"><strong>Enter First Name</strong></label>
-                <input type="text" id="fname" name="fname" placeholder="E.g John">
-                <p id="error-nametext">Please enter a Name to begin.</p>
-                </div>
-                <button aria-label="Start Assessment" id="start-btn">Start</button>
-            </section>
-            <section id="quiz" class="quiz-container">
+        <!--Start Screen Styling-->
+        <section id="entry-screen">
+            <h3 class="guidelines">How it works</h3>
+            <p class="guidelinesp">The following quiz is intended to figure out your interests and aptitudes to best direct the kind of career in Tech which may suit you. You will be presented with a series of 10 questions, please answer each truthfully in order to achieve the most reliable results.</p>
+            <div id="namefields">
+            <label for="fname"><strong>Enter First Name</strong></label>
+            <input type="text" id="fname" name="fname" placeholder="E.g John">
+            <p id="error-nametext">Please enter a Name to begin.</p>
+            </div>
+            <button aria-label="Start Assessment" id="start-btn">Start</button>
+        </section>
+            <!--Quiz Questions Screen Styling-->
+        <section id="quiz" class="quiz-container">
             <p id="quiz-question-number"></p>
             <h2 id="quiz-question"></h2>
             <div class="answers">
@@ -40,12 +42,14 @@
                 <input type="radio" id="d" name="radio-answer" class="answer">
                 <label id="d-label"  for="d">D. Answer</label><br>
             </div>
+            <!--Error Message when no answer selected and person clicks next-->
             <p id="error-text">You must answer the question before progressing.</p>
             <button aria-label="Next Question" id="next-btn">Next</button>
-            </section>
-            <section id="results-area"></section>
+        </section>
+        <!--Results Screen Styling-->
+        <section id="results-area"></section>
     </section>
-<footer>Copyright 2022
+<footer><span>Copyright 2022</span>
     <script src="assets/javascript/quiz.js"></script>
 </footer>
 </body>

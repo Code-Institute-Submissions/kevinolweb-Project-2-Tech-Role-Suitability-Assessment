@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+/*Quiz Questions and answers to be loaded */
 const quizData = [
     {
         question:"Which of the below represents how you like to work?",
@@ -8,6 +9,7 @@ const quizData = [
             answer_c:"I mostly prefer to work with other people every day",
             answer_d:"I don’t like working on my own ",
         },
+        /*These scores are used for points totaling in results tab */
         highest_score:"b",
         second_highest_score:"a",
         third_highest_score:"c",
@@ -151,9 +153,11 @@ let currentQuestion = 0;
 let score = 0;
 let quizName="";
 
+/*This function displays the quiz question by calling runGame once a person clicks start */
 startButton.addEventListener("click",function(){
     let firstName = document.getElementById("fname");
     quizName += firstName.value;
+    //Check to ensure a person has entered a character in input field
     if (quizName.length!=0){
         runGame();
     }
@@ -183,11 +187,12 @@ function displayQuestion(){
     }
     
 }
-
+/*This function deselects each checkbox to ensure all are empty on page load */
 function deSelectAnswer(){
     answers.forEach(ans=>ans.checked=false);
 }
 
+//This function checks and stores the answer a person clicks
 function selectAnswer(){
     let userAnswer;
     answers.forEach(selAns=>{
@@ -198,6 +203,7 @@ function selectAnswer(){
     return userAnswer;
 }
 
+//Function displays next question and stores answer and runs score calculation
 nextbtn.addEventListener("click", function(){
     let userAnswer = selectAnswer();
     if (userAnswer===undefined || userAnswer===null){
@@ -217,7 +223,8 @@ nextbtn.addEventListener("click", function(){
         }
     }
 });
-
+/* Please review quizData scoring to understand the scoring system
+Different answers mean different scores*/
 function calculateScore(theAnswer){
     if (theAnswer===quizData[currentQuestion].highest_score){
         score +=10;
@@ -233,26 +240,28 @@ function calculateScore(theAnswer){
     }
 
 }
-
+/* This function displays the result screen.
+Messages are customised based on the combined score a person achieves from playing the quiz/assessment.*/
 function showResult(){
     let resultText;
     let resultImage;
     let careerlabel;
+    let careers;
     if (score>=80){
         resultText = "are highly technical with a flair for finding and implementing solutions for everyday problems. It is very likely that a highly technical role within an organisation would suit your aptitudes. Possible career opportunities for you in Tech could include:</p>";
         careerlabel = "Problem Solver";
         resultImage ="../assets/images/high-tech-role.jpg";
-        careers = ["Software Developer","Data Scientist","Full Stack engineer","Mobile & App developer","Cloud Engineer"];
+        careers = ["Software Developer","Data Scientist","Full Stack Engineer","Mobile & App Developer","Cloud Engineer"];
     }
     else if(score>=60 && score<80){
         resultText = "are quiet technical with high degree of creativity who collaborate with multiple different stakeholders. It is highly likely that roles with this focus within an organisation would suit your aptitudes. Possible career opportunities for you in Tech could include:";
         careerlabel = "Solution Developer";
         resultImage ="../assets/images/solution-developer.jpg";
-        careers = ["Web Designer","Front End Developer","Cybersecurity Specialist","Systems/Cloud architect","IT administrator"];
+        careers = ["Web Designer","Front End Developer","Cybersecurity Specialist","Systems/Cloud Architect","IT Administrator"];
     }
     else if(score>=40 && score<60){
         resultText = "have technical skills but their day to day tasks involve a lot of analysis and collaboration with others. It is highly likely that roles with this focus within an organisation would suit your aptitudes. Possible career opportunities for you in Tech could include:";
-        careerlabel = "Enthusiastic Collaborator";
+        careerlabel = "Passionate Collaborator";
         resultImage ="../assets/images/collaborator.jpg";
         careers = ["Technical Support", "IT Analyst", "Software Tester(QA)", "Account Manager", "Conversion Rate Optimiser(CRO)"];
     }
@@ -266,7 +275,6 @@ function showResult(){
         resultText = "Error compiling results";
     }
     quizContainer.classList.add("hide");
-    console.log(score);
     resultsArea.innerHTML=`<h2>Assessment Completed!</h2><p>Thank you for participating ${quizName}.</p>
     <h3>Based on the responses to the assessment, you are a <span style="color:#9433D6;"><u>${careerlabel}</u></span>.</h3> 
     <img class="resultImg" alt="Tech Person at Work" width=100% src="${resultImage}"/>
