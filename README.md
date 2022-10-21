@@ -70,10 +70,10 @@ To inform my approach to this project, I first created a number of different low
 
 ### Low Fidelity Wireframes
 #### Start Screen
-![Screen 1 Mock Up](/assets/images/readme/Screen 1.png)
+![Screen 1 Mock Up](https://github.com/kevinolweb/Project-2-Tech-Role-Suitability-Assessment/blob/1875b9416ae67e6e8e7d3a00d66aff686d86e53e/assets/images/readme/Screen-1.png)
 
 #### Question Screen
-<img alt="Final Question Screen Mock Up" style="width:600px;" src="/assets/images/readme/Screen 2.png">
+<img alt="Final Question Screen Mock Up" style="width:600px;" src="https://github.com/kevinolweb/Project-2-Tech-Role-Suitability-Assessment/blob/1875b9416ae67e6e8e7d3a00d66aff686d86e53e/assets/images/readme/Screen 1.png">
 #### Final Question Screen
 <img alt="Screen 3 Mock Up" style="width:600px;" src="/assets/images/readme/Screen 3.png">
 #### Result Screen
