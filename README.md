@@ -1,8 +1,7 @@
 # Tech Role Suitability Assessment
-<img alt="Project Preview" src="assets/images/readme/role-suitability-final-outcome.jpg"/>
+<img alt="Project Preview" src="/assets/images/readme/role-suitability-final-outcome.jpg"/>
 Nowadays due to the rumours of high salaries and work from home benefits, many people want to get a job working in Technology. This quiz has been developed to help people understand if a role in Tech is for them and at what level. Are you interested in a highly technical role like a software developer but unsure if it suits your interests and aptitude? Do you like technology but are less interested in the coding side? 
-View the live application [here](https://kevinolweb.github.io/Project-2-Tech-Role-Suitability-Assessment/).
-
+View the live application https://kevinolweb.github.io/Project-2-Tech-Role-Suitability-Assessment/.
 
 ## Table of Contents
 - Intro
@@ -17,6 +16,7 @@ View the live application [here](https://kevinolweb.github.io/Project-2-Tech-Rol
 
 ## Intro
 Our skills assessment accesses a person based on a series of questions which have been designed based on research. Opportunities exist for everyone in Tech but it’s important that somebody is matched with the right role. You may hate sitting behind a computer but love interacting with people. This could mean a project management role would be better suited to you than a programmer. 
+
 This quiz will help you find the best role in Tech that suits your skills and interests. The tool can be sold as a branded application to Coding Bootcamps and colleges to be a lead generation tool for them or exist as its own entity to help people find the right career for them in Tech.
 
 ## The Scoring System
@@ -67,13 +67,13 @@ To inform my approach to this project, I first created a number of different low
 
 ### Low Fidelity Wireframes
 ***Start Screen***
-<img src="assets/images/readme/Screen 1.png">
+<img alt="Screen 1 Mock Up" src="/assets/images/readme/Screen 1.png">
 ***Question Screen***
-<img src="assets/images/readme/Screen 2.png">
+<img alt="Final Question Screen Mock Up" src="/assets/images/readme/Screen 2.png">
 ***Final Question Screen***
-<img src="assets/images/readme/Screen 3.png">
+<img alt="Screen 3 Mock Up" src="/assets/images/readme/Screen 3.png">
 ***Result Screen***
-<img src="assets/images/readme/Screen 4 Result Screen.png">
+<img alt="Result Screen Mock Up" src="/assets/images/readme/Screen 4 Result Screen.png">
 
 ### User Stories 
 I completed a number of User Stories to understand the user’s point of view and what features would be required in the project for it to work well.
@@ -98,7 +98,7 @@ I wanted the design of the application to be as aesthetically pleasing as possib
 
 ### Colour
 I wanted to use a darker palette which is often associated with Technology websites while also allowing the quiz area to be white, so questions and answers are easy to read. The limited distraction a white background provides also encourages one to play. The colours I chose were:
-<img alt="color palette" src="assets/images/readme/colors.jpg">
+<img alt="color palette" src="/assets/images/readme/colors.jpg">
 - #22933e - A soft green for the play button
 - #ED4558 - A muted red for the Finish button
 - #F7D43B – A soft yellow for the horizontal line to separate the header from Quiz area
@@ -113,11 +113,11 @@ The quiz application has different features which each combine to provide a good
 
 ### Existing Features
 #### Opening Screen
-<img alt="Screen 1 Image" src="assets/images/readme/screen-1-final.jpg">
+<img alt="Screen 1 Image" src="/assets/images/readme/screen-1-final.jpg">
 The opening screen is clean and minimalist to encourage people to take the quiz. It clearly sets out what the user has to do through brief instructions and how completing the quiz will help them. An input field is present which a person must submit in order to progress beyond the start page. If they do not enter their name an error message will display. Once they have filled in their name, they can click “Start” and will be displayed the first question.
 
 #### Quiz Screen
-<img alt="Question Screen Image" src="assets/images/readme/screen-2-final.jpg">
+<img alt="Question Screen Image" src="/assets/images/readme/screen-2-final.jpg">
 The quiz screen itself displays on “Screen 2” once a person clicks play on the opening screen. Questions are displayed one at a time and the next question is displayed when a person click the next button. Question answers are completed via a radio button. On each quiz page you can see the question number you are on.
 
 
@@ -125,7 +125,7 @@ The quiz screen itself displays on “Screen 2” once a person clicks play on t
 On reaching question 10, the quiz screen button text changes from “Next” to “Finish” to provide user feedback that this is the last question. The finish button background colour also toggles to Red.
 
 #### Result Screen
-<img alt="Result Screen Image" src="assets/images/readme/result-screen-final.jpg">
+<img alt="Result Screen Image" src="/assets/images/readme/result-screen-final.jpg">
 The last screen displays the persons results and tells the user that the assessment is over. The participant is given a personality label based on their cumulative score calculated in the background of the application. They are also provided with a unique image related to the personality label as well as text of what kind of role in Tech would suit them. An external link to a website where they can find out more about these roles is also displayed at the end of the page.
 
 #### Footer
@@ -157,7 +157,7 @@ The website went through rigorous testing before being deployed. These included:
     - No errors were found when code went through JS Hint. A comment was applied to JS code to ensure JS Hint recognised that the application was coded in JavaScript ES6 and had let variables and arrow function syntax.
 
 ### Accessibility
-<img alt="Google Lighthouse Screenshot" src="assets/images/readme/lighthouse.jpg">
+<img alt="Google Lighthouse Screenshot" src="/assets/images/readme/lighthouse.jpg">
 The site scored well for accessibility and performance across all devices
 
 ### Manual Tests
