@@ -1,6 +1,7 @@
 # Tech Role Suitability Assessment
 <img alt="Project Preview" src="/assets/images/readme/role-suitability-final-outcome.jpg"/>
 Nowadays due to the rumours of high salaries and work from home benefits, many people want to get a job working in Technology. This quiz has been developed to help people understand if a role in Tech is for them and at what level. Are you interested in a highly technical role like a software developer but unsure if it suits your interests and aptitude? Do you like technology but are less interested in the coding side? 
+
 View the live application https://kevinolweb.github.io/Project-2-Tech-Role-Suitability-Assessment/.
 
 ## Table of Contents
@@ -66,13 +67,13 @@ If a participant selects option b from question 1 and a from question 2, they wi
 To inform my approach to this project, I first created a number of different low fidelity wireframes to picture what the user experience would be like before beginning to code the application. See these below.
 
 ### Low Fidelity Wireframes
-***Start Screen***
+#### Start Screen
 <img alt="Screen 1 Mock Up" src="/assets/images/readme/Screen 1.png">
-***Question Screen***
+#### Question Screen
 <img alt="Final Question Screen Mock Up" src="/assets/images/readme/Screen 2.png">
-***Final Question Screen***
-<img alt="Screen 3 Mock Up" src="/assets/images/readme/Screen 3.png">
-***Result Screen***
+#### Final Question Screen
+<img alt="Screen 3 Mock Up" style="width:600px;" src="/assets/images/readme/Screen 3.png">
+#### Result Screen
 <img alt="Result Screen Mock Up" src="/assets/images/readme/Screen 4 Result Screen.png">
 
 ### User Stories 
