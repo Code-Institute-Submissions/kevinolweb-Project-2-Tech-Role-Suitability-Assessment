@@ -250,25 +250,25 @@ function showResult(){
     if (score>=80){
         resultText = "are highly technical with a flair for finding and implementing solutions for everyday problems. It is very likely that a highly technical role within an organisation would suit your aptitudes. Possible career opportunities for you in Tech could include:</p>";
         careerlabel = "Problem Solver";
-        resultImage ="../assets/images/high-tech-role.jpg";
+        resultImage ="../images/high-tech-role.jpg";
         careers = ["Software Developer","Data Scientist","Full Stack Engineer","Mobile & App Developer","Cloud Engineer"];
     }
     else if(score>=60 && score<80){
         resultText = "are quiet technical with high degree of creativity who collaborate with multiple different stakeholders. It is highly likely that roles with this focus within an organisation would suit your aptitudes. Possible career opportunities for you in Tech could include:";
         careerlabel = "Solution Developer";
-        resultImage ="../assets/images/solution-developer.jpg";
+        resultImage ="../images/solution-developer.jpg";
         careers = ["Web Designer","Front End Developer","Cybersecurity Specialist","Systems/Cloud Architect","IT Administrator"];
     }
     else if(score>=40 && score<60){
         resultText = "have technical skills but their day to day tasks involve a lot of analysis and collaboration with others. It is highly likely that roles with this focus within an organisation would suit your aptitudes. Possible career opportunities for you in Tech could include:";
         careerlabel = "Passionate Collaborator";
-        resultImage ="../assets/images/collaborator.jpg";
+        resultImage ="../images/collaborator.jpg";
         careers = ["Technical Support", "IT Analyst", "Software Tester(QA)", "Account Manager", "Conversion Rate Optimiser(CRO)"];
     }
     else if(score>0 && score<40){
         resultText = "do not require much technical skills as their day to day tasks take a more strategic focus and may involve a lot of interaction & colloaboration with clients, customers and other stakeholders. It is highly likely that roles with this focus within an organisation would suit your aptitudes. Possible career opportunities for you in Tech could include:";
         careerlabel = "Strategic Supporter";
-        resultImage ="../assets/images/heros.jpg";
+        resultImage ="../images/heros.jpg";
         careers = ["Project Management", "Software Sales", "Customer Support", "Content Writer", "Digital Manager"];
     }
     else{
