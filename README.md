@@ -107,6 +107,7 @@ I wanted the design of the application to be as aesthetically pleasing as possib
 
 ### Colour
 I wanted to use a darker palette which is often associated with Technology websites while also allowing the quiz area to be white, so questions and answers are easy to read. The limited distraction a white background provides also encourages one to play. The colours I chose were:
+
 ![color palette](/assets/images/readme/colors.jpg)
 
 - #22933e - A soft green for the play button
