@@ -70,14 +70,16 @@ To inform my approach to this project, I first created a number of different low
 
 ### Low Fidelity Wireframes
 #### Start Screen
-![Screen 1 Mock Up](https://github.com/kevinolweb/Project-2-Tech-Role-Suitability-Assessment/blob/1875b9416ae67e6e8e7d3a00d66aff686d86e53e/assets/images/readme/Screen-1.png)
+![Screen 1 Mock Up](/assets/images/readme/Screen-1.png)
 
 #### Question Screen
-<img alt="Final Question Screen Mock Up" style="width:600px;" src="https://github.com/kevinolweb/Project-2-Tech-Role-Suitability-Assessment/blob/1875b9416ae67e6e8e7d3a00d66aff686d86e53e/assets/images/readme/Screen 1.png">
+![Final Question Screen Mock Up](/assets/assets/images/readme/Screen2-mock.png)
+
 #### Final Question Screen
-<img alt="Screen 3 Mock Up" style="width:600px;" src="/assets/images/readme/Screen 3.png">
+![Screen 3 Mock Up](/assets/images/readme/Screen3-mock.png)
+
 #### Result Screen
-<img alt="Result Screen Mock Up" style="width:600px;" src="/assets/images/readme/Screen 4 Result Screen.png">
+![Result Screen Mock Up](/assets/images/readme/Screen4ResultScreen.png)
 
 ### User Stories 
 I completed a number of User Stories to understand the user’s point of view and what features would be required in the project for it to work well.
@@ -102,7 +104,7 @@ I wanted the design of the application to be as aesthetically pleasing as possib
 
 ### Colour
 I wanted to use a darker palette which is often associated with Technology websites while also allowing the quiz area to be white, so questions and answers are easy to read. The limited distraction a white background provides also encourages one to play. The colours I chose were:
-<img alt="color palette" src="/assets/images/readme/colors.jpg">
+![color palette](/assets/images/readme/colors.jpg)
 - #22933e - A soft green for the play button
 - #ED4558 - A muted red for the Finish button
 - #F7D43B – A soft yellow for the horizontal line to separate the header from Quiz area
@@ -117,11 +119,11 @@ The quiz application has different features which each combine to provide a good
 
 ### Existing Features
 #### Opening Screen
-<img alt="Screen 1 Image" src="/assets/images/readme/screen-1-final.jpg">
+![Screen 1 Image](/assets/images/readme/screen-1-final.jpg)
 The opening screen is clean and minimalist to encourage people to take the quiz. It clearly sets out what the user has to do through brief instructions and how completing the quiz will help them. An input field is present which a person must submit in order to progress beyond the start page. If they do not enter their name an error message will display. Once they have filled in their name, they can click “Start” and will be displayed the first question.
 
 #### Quiz Screen
-<img alt="Question Screen Image" src="/assets/images/readme/screen-2-final.jpg">
+![Question Screen Image](/assets/images/readme/screen-2-final.jpg)
 The quiz screen itself displays on “Screen 2” once a person clicks play on the opening screen. Questions are displayed one at a time and the next question is displayed when a person click the next button. Question answers are completed via a radio button. On each quiz page you can see the question number you are on.
 
 
@@ -129,7 +131,7 @@ The quiz screen itself displays on “Screen 2” once a person clicks play on t
 On reaching question 10, the quiz screen button text changes from “Next” to “Finish” to provide user feedback that this is the last question. The finish button background colour also toggles to Red.
 
 #### Result Screen
-<img alt="Result Screen Image" src="/assets/images/readme/result-screen-final.jpg">
+![Result Screen Image](/assets/images/readme/result-screen-final.jpg)
 The last screen displays the persons results and tells the user that the assessment is over. The participant is given a personality label based on their cumulative score calculated in the background of the application. They are also provided with a unique image related to the personality label as well as text of what kind of role in Tech would suit them. An external link to a website where they can find out more about these roles is also displayed at the end of the page.
 
 #### Footer
@@ -161,7 +163,7 @@ The website went through rigorous testing before being deployed. These included:
     - No errors were found when code went through JS Hint. A comment was applied to JS code to ensure JS Hint recognised that the application was coded in JavaScript ES6 and had let variables and arrow function syntax.
 
 ### Accessibility
-<img alt="Google Lighthouse Screenshot" src="/assets/images/readme/lighthouse.jpg">
+![Google Lighthouse Screenshot](/assets/images/readme/lighthouse.jpg)
 The site scored well for accessibility and performance across all devices
 
 ### Manual Tests
