@@ -254,7 +254,7 @@ function showResult(){
         careers = ["Software Developer","Data Scientist","Full Stack Engineer","Mobile & App Developer","Cloud Engineer"];
     }
     else if(score>=60 && score<80){
-        resultText = "are quiet technical with high degree of creativity who collaborate with multiple different stakeholders. It is highly likely that roles with this focus within an organisation would suit your aptitudes. Possible career opportunities for you in Tech could include:";
+        resultText = "are quiet technical with high degrees of creativity who collaborate with multiple different stakeholders. It is highly likely that roles with this focus within an organisation would suit your aptitudes. Possible career opportunities for you in Tech could include:";
         careerlabel = "Solution Developer";
         resultImage ="assets/images/solution-developer.jpg";
         careers = ["Web Designer","Front End Developer","Cybersecurity Specialist","Systems/Cloud Architect","IT Administrator"];
@@ -266,7 +266,7 @@ function showResult(){
         careers = ["Technical Support", "IT Analyst", "Software Tester(QA)", "Account Manager", "Conversion Rate Optimiser(CRO)"];
     }
     else if(score>0 && score<40){
-        resultText = "do not require much technical skills as their day to day tasks take a more strategic focus and may involve a lot of interaction & colloaboration with clients, customers and other stakeholders. It is highly likely that roles with this focus within an organisation would suit your aptitudes. Possible career opportunities for you in Tech could include:";
+        resultText = "do not require much technical skills as their day to day tasks take a more strategic focus and may involve a lot of interaction & collaboration with clients, customers and other stakeholders. It is highly likely that roles with this focus within an organisation would suit your aptitudes. Possible career opportunities for you in Tech could include:";
         careerlabel = "Strategic Supporter";
         resultImage ="assets/images/heros.jpg";
         careers = ["Project Management", "Software Sales", "Customer Support", "Content Writer", "Digital Manager"];
@@ -280,7 +280,7 @@ function showResult(){
     <img class="resultImg" alt="Tech Person at Work" width=100% src="${resultImage}"/>
     <p>${careerlabel}'s ${resultText}</p>
     <ul><li>${careers[0]}</li><li>${careers[1]}</li><li>${careers[2]}</li><li>${careers[3]}</li><li>${careers[4]}</li></ul>
-    <p>Explore these careers and more on the Grad Ireland <a target="_blank" href="https://gradireland.com/careers-advice/job-descriptions">website. </a>Get started on your journey to a career in Tech today!</p>
+    <p>Explore these careers and more on the Grad Ireland <a target="_blank" href="https://gradireland.com/careers-advice/job-descriptions">website.</a> Get started on your journey to a career in Tech today!</p>
     `;
     
 }
