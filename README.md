@@ -78,6 +78,7 @@ To inform my approach to this project, I first created a number of different low
 
 #### Final Question Screen
 ![Screen 3 Mock Up](/assets/images/readme/Screen3mock.png)
+
 #### Result Screen
 ![Result Screen Mock Up](/assets/images/readme/Screen4ResultScreen.png)
 
@@ -107,6 +108,7 @@ I wanted the design of the application to be as aesthetically pleasing as possib
 ### Colour
 I wanted to use a darker palette which is often associated with Technology websites while also allowing the quiz area to be white, so questions and answers are easy to read. The limited distraction a white background provides also encourages one to play. The colours I chose were:
 ![color palette](/assets/images/readme/colors.jpg)
+
 - #22933e - A soft green for the play button
 - #ED4558 - A muted red for the Finish button
 - #F7D43B – A soft yellow for the horizontal line to separate the header from Quiz area
@@ -169,6 +171,7 @@ The website went through rigorous testing before being deployed. These included:
 
 ### Accessibility
 ![Google Lighthouse Screenshot](/assets/images/readme/lighthouse.jpg)
+
 The site scored well for accessibility and performance across all devices
 
 ### Manual Tests
