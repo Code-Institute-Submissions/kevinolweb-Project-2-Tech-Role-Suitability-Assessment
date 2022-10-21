@@ -1,19 +1,19 @@
 # Tech Role Suitability Assessment
-<img alt="Project Preview" src="/assets/images/readme/role-suitability-final-outcome.jpg"/>
+![Project Preview](/assets/images/readme/role-suitability-final-outcome.jpg)
 Nowadays due to the rumours of high salaries and work from home benefits, many people want to get a job working in Technology. This quiz has been developed to help people understand if a role in Tech is for them and at what level. Are you interested in a highly technical role like a software developer but unsure if it suits your interests and aptitude? Do you like technology but are less interested in the coding side? 
 
-View the live application https://kevinolweb.github.io/Project-2-Tech-Role-Suitability-Assessment/.
+View the live application [here](https://kevinolweb.github.io/Project-2-Tech-Role-Suitability-Assessment/).
 
 ## Table of Contents
-- Intro
-- The Scoring System
-- UX
-- Design
-- Features
-- Technologies
-- Testing
-- Deployment
-- Credits
+- [Intro](https://github.com/kevinolweb/Project-2-Tech-Role-Suitability-Assessment/blob/main/README.md#intro)
+- [The Scoring System](https://github.com/kevinolweb/Project-2-Tech-Role-Suitability-Assessment/blob/main/README.md#the-scoring-system)
+- [UX](https://github.com/kevinolweb/Project-2-Tech-Role-Suitability-Assessment/blob/main/README.md#ux)
+- [Design](https://github.com/kevinolweb/Project-2-Tech-Role-Suitability-Assessment/blob/main/README.md#design)
+- [Features](https://github.com/kevinolweb/Project-2-Tech-Role-Suitability-Assessment/blob/main/README.md#features)
+- [Technologies](https://github.com/kevinolweb/Project-2-Tech-Role-Suitability-Assessment/blob/main/README.md#technologies)
+- [Testing](https://github.com/kevinolweb/Project-2-Tech-Role-Suitability-Assessment/blob/main/README.md#testing)
+- [Deployment](https://github.com/kevinolweb/Project-2-Tech-Role-Suitability-Assessment/blob/main/README.md#deployment)
+- [Credits](https://github.com/kevinolweb/Project-2-Tech-Role-Suitability-Assessment/blob/main/README.md#credits)
 
 ## Intro
 Our skills assessment accesses a person based on a series of questions which have been designed based on research. Opportunities exist for everyone in Tech but it’s important that somebody is matched with the right role. You may hate sitting behind a computer but love interacting with people. This could mean a project management role would be better suited to you than a programmer. 
@@ -34,7 +34,7 @@ Quiz questions were designed post research which found the following skillsets/a
 | Willingness to continually learn new skills | High |
 | Problem Solving | High |
 | Teamwork | High |
-| Work Style | Medium-High |
+| Work Ethic | Medium-High |
 | Patience | Medium-High |
 | Working under Pressure/Meeting Deadlines | Medium-High |
 | Creativity |  Medium-High |
@@ -42,19 +42,21 @@ Quiz questions were designed post research which found the following skillsets/a
 
 Each question in the quiz relates to each of these aptitudes and tries to elicit if a person has high levels or low. See 2 questions from the quiz below with an associated score in brackets:
 
-*Q1. Which of the below represents how you like to work?*<br/>
+*Q1. Which of the below represents how you like to work?*
+
 a. I like to work by myself (7)<br/>
 b.	I like to work by myself while also collaborating with others (10)<br/>
 c.	I mostly prefer to work with other people every day (4)<br/>
 d.	I don’t like working on my own (1)
 
-*Q2 Are you good at Maths and numeric/statistics?*<br/>
+*Q2 Are you good at Maths and numeric/statistics?*
+
 a.	I hate Maths and statistics (1)<br/>
 b.	I am relatively good at Maths but enjoy more creative pursuits (4)<br/>
 c.	I enjoy Maths and never forget a date (7)<br/>
 d.	Maths and statistics come easy to me and I love to open up an excel sheet (10)
 
-If a participant selects option b from question 1 and a from question 2, they will have a running score of 11 (10+1). For the next question, if they continue to select answers with give a score of 7 for each of the 8 remaining questions in the quiz (7x8=56), their total would be 67 (56+11). This result of 67 is then matched with the below result scoring system to provide the person with a personality label and associated image and description of what role in tech would suit them. In this example the person would be labelled a “Solution Developer” on the assessment result screen and receive additional related information.
+If a participant selects option b from question 1 and a from question 2, they will have a running score of 11 (10+1). For the next question, if they continue to select answers with a score of 7 for each of the 8 remaining questions in the quiz (7x8=56), their total would be 67 (56+11). This result of 67 is then matched with the below result scoring system to provide the person with a personality label and associated image and description of what role in tech would suit them. In this example the person would be labelled a “Solution Developer” on the assessment result screen and receive additional related information.
 
 | Score      | Personality Label | Suggested Roles |
 | ----------- | ----------- | ----------- |
@@ -68,13 +70,14 @@ To inform my approach to this project, I first created a number of different low
 
 ### Low Fidelity Wireframes
 #### Start Screen
-<img alt="Screen 1 Mock Up" src="/assets/images/readme/Screen 1.png">
+![Screen 1 Mock Up](/assets/images/readme/Screen 1.png)
+
 #### Question Screen
-<img alt="Final Question Screen Mock Up" src="/assets/images/readme/Screen 2.png">
+<img alt="Final Question Screen Mock Up" style="width:600px;" src="/assets/images/readme/Screen 2.png">
 #### Final Question Screen
 <img alt="Screen 3 Mock Up" style="width:600px;" src="/assets/images/readme/Screen 3.png">
 #### Result Screen
-<img alt="Result Screen Mock Up" src="/assets/images/readme/Screen 4 Result Screen.png">
+<img alt="Result Screen Mock Up" style="width:600px;" src="/assets/images/readme/Screen 4 Result Screen.png">
 
 ### User Stories 
 I completed a number of User Stories to understand the user’s point of view and what features would be required in the project for it to work well.
