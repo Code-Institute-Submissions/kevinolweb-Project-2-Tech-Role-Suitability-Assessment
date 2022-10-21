@@ -74,13 +74,14 @@ To inform my approach to this project, I first created a number of different low
 ![Screen 1 Mock Up](/assets/images/readme/Screen-1.png)
 
 #### Question Screen
-![Final Question Screen Mock Up](/assets/assets/images/readme/Screen2-mock.png)
+![Question Screen Mock Up](/assets/images/readme/Screen2-mock.png)
 
 #### Final Question Screen
-![Screen 3 Mock Up](/assets/images/readme/Screen3-mock.png)
-
+![Screen 3 Mock Up](/assets/images/readme/Screen3mock.png)
 #### Result Screen
 ![Result Screen Mock Up](/assets/images/readme/Screen4ResultScreen.png)
+
+
 
 ### User Stories 
 I completed a number of User Stories to understand the user’s point of view and what features would be required in the project for it to work well.
