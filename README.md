@@ -1,5 +1,6 @@
 # Tech Role Suitability Assessment
 ![Project Preview](/assets/images/readme/role-suitability-final-outcome.jpg)
+
 Nowadays due to the rumours of high salaries and work from home benefits, many people want to get a job working in Technology. This quiz has been developed to help people understand if a role in Tech is for them and at what level. Are you interested in a highly technical role like a software developer but unsure if it suits your interests and aptitude? Do you like technology but are less interested in the coding side? 
 
 View the live application [here](https://kevinolweb.github.io/Project-2-Tech-Role-Suitability-Assessment/).
@@ -120,10 +121,12 @@ The quiz application has different features which each combine to provide a good
 ### Existing Features
 #### Opening Screen
 ![Screen 1 Image](/assets/images/readme/screen-1-final.jpg)
+
 The opening screen is clean and minimalist to encourage people to take the quiz. It clearly sets out what the user has to do through brief instructions and how completing the quiz will help them. An input field is present which a person must submit in order to progress beyond the start page. If they do not enter their name an error message will display. Once they have filled in their name, they can click “Start” and will be displayed the first question.
 
 #### Quiz Screen
 ![Question Screen Image](/assets/images/readme/screen-2-final.jpg)
+
 The quiz screen itself displays on “Screen 2” once a person clicks play on the opening screen. Questions are displayed one at a time and the next question is displayed when a person click the next button. Question answers are completed via a radio button. On each quiz page you can see the question number you are on.
 
 
@@ -132,6 +135,7 @@ On reaching question 10, the quiz screen button text changes from “Next” to 
 
 #### Result Screen
 ![Result Screen Image](/assets/images/readme/result-screen-final.jpg)
+
 The last screen displays the persons results and tells the user that the assessment is over. The participant is given a personality label based on their cumulative score calculated in the background of the application. They are also provided with a unique image related to the personality label as well as text of what kind of role in Tech would suit them. An external link to a website where they can find out more about these roles is also displayed at the end of the page.
 
 #### Footer
